@@ -1,0 +1,28 @@
+CREATE TABLE Student (
+    RNo INT PRIMARY KEY,
+    Name VARCHAR(50) NOT NULL,
+    Branch VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Result (
+    RNo INT,
+    SPI DECIMAL(4,2) NOT NULL,
+    CONSTRAINT fk_student
+        FOREIGN KEY (RNo)
+        REFERENCES Student(RNo)
+);
+INSERT INTO Student (RNo, Name, Branch) VALUES
+(101, 'Raju', 'CE'),
+(102, 'Amit', 'CE'),
+(103, 'Sanjay', 'ME'),
+(104, 'Neha', 'EC'),
+(105, 'Meera', 'EE'),
+(106, 'Mahesh', 'ME');
+
+
+INSERT INTO Result (RNo, SPI) VALUES
+(101, 8.8),
+(102, 9.2),
+(103, 7.6),
+(104, 8.2),
+(105, 7.0);
