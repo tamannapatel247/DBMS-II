@@ -1,0 +1,44 @@
+CREATE TABLE Employee (
+    EID INT PRIMARY KEY,
+    EName VARCHAR(100),
+    Gender VARCHAR(10),
+    JoiningDate DATETIME,
+    Salary DECIMAL(8,2),
+    City VARCHAR(100)
+);
+
+INSERT INTO Employee VALUES
+(1, 'Nick', 'Male', '2013-01-01', 4000, 'London'),
+(2, 'Julian', 'Female', '2014-10-01', 3000, 'New York'),
+(3, 'Roy', 'Male', '2016-06-01', 3500, 'London'),
+(4, 'Tom', 'Male', NULL, 4500, 'London'),
+(5, 'Jerry', 'Male', '2013-02-01', 2800, 'Sydney'),
+(6, 'Philip', 'Male', '2015-01-01', 7000, 'New York'),
+(7, 'Sara', 'Female', '2017-08-01', 4800, 'Sydney'),
+(8, 'Emily', 'Female', '2015-01-01', 5500, 'New York'),
+(9, 'Michael', 'Male', NULL, 6500, 'London'),
+(10, 'John', 'Male', '2015-01-01', 8800, 'London');
+
+Scalar Valued Functions
+Part – A
+1. Create a function which displays total number of employees.
+2. Create a function which count unique city from employee table.
+3. Create a Scalar-valued function that returns the name combined with salary of an employee based on 
+their employee id and displayed output like ‘Roy having 3500 salaries’.
+4. Create a function which returns highest salary from Employee table.
+Part – B
+5. Create a function to get the experience of the employee based on their joining date.
+6. Create a function which returns minimum salary of female employee.
+Table Valued Functions
+Part – A
+1. Create a function which retrieve the data of Employee table.
+2. Create a function which returns an employee table with city wise total salary. 
+3. Create a function which returns an employee table with gender wise maximum, minimum, total and 
+average salaries.
+4. Create a function which return an employee table with details of employee whose name starts with J.
+5. Create a function to get all the male employees.
+Part – B
+6. Create a function to get employees from a given city.
+7. Create a function that displays employees with a salary greater than a specified amount.
+8. Create a function to get employees who joined after a given specified date.
+
