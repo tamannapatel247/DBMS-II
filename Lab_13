@@ -1,0 +1,29 @@
+CREATE TABLE ProductSchema.Products
+(
+    Product_id INT PRIMARY KEY,
+    Product_Name VARCHAR(250) NOT NULL,
+    Price DECIMAL(10,2) NOT NULL
+);
+
+
+INSERT INTO ProductSchema.Products VALUES
+(1, 'Smartphone', 35000),
+(2, 'Laptop', 65000),
+(3, 'Headphones', 5500),
+(4, 'Television', 85000),
+(5, 'Gaming Console', 32000);
+
+Part – A
+1. Create a cursor Product_Cursor to fetch all the rows from a products table.
+2. Create a cursor Product_Cursor_Fetch to fetch the records in form of ProductID_ProductName 
+(Example: 1_Smartphone).
+3. Create a cursor that displays the products price above 50000.
+4. Create a cursor Product_CursorUpdate that retrieves all the data from the products table and increases
+the price by 10%.
+Part – B
+5. Create a cursor that finds product with maximum price.
+6. Create a cursor to insert details of Products table into the NewProductstable if the product is “Laptop”.
+Part – C
+7. Create a cursor that increase price of products by 5000 if price is below 40000.
+8. Create a cursor that displays products with prices below the average price.
+9. Create a cursor Product_CursorDelete that deletes all the data from the Products table.
